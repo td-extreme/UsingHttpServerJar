@@ -7,7 +7,7 @@ GREEN='\033[0;32m'
 WHITE='\033[0m'
 
 setUp() {
-  ./gradle run &
+  ./gradlew run &
   SERVER_PID=$!
   printf "\n\n:Blackbox Tests:\n"
   cd ./src/blackboxTest/bash
